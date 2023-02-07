@@ -126,7 +126,7 @@ export default {
                     else if (error.message) {
                         this.errors.push('Something went wrong. Please try again.')
 
-                        console.log(JSON.stringify(error))
+                        (JSON.stringify(error))
                     }
 
                     toast({

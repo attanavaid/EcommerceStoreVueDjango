@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+from django.shortcuts import render
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,14 +22,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-uu!n%xvg!+3ex5q!2%c@+v!1y7_d#45^es-dhj4zl#u42e5m!%')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', default='sk_test_51MV4iJJf6R0v8AOGFBYCHNBdO6ipBaiB4PxzI5ESraQNLFp63WYzfgQaVGB4NcyakkMqj2LFATUh9gcffYhIrKEM00xt0Sjf6U')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'RENDER' not in os.environ
 
+# https://docs.djangoproject.com/en/3.0/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
 
-STRIPE_SECRET_KEY = ''
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME') 
+
+if RENDER_EXTERNAL_HOSTNAME: 
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
 # Application definition
 
 INSTALLED_APPS = [
