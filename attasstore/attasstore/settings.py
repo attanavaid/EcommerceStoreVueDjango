@@ -29,7 +29,7 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 DEBUG = os.getenv('DEBUG', '0').lower() in ['true', 't', '1']
 
 # https://docs.djangoproject.com/en/3.0/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
