@@ -54,7 +54,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:8080',
     'http://127.0.0.1:8000',
-    'https://ecommerce-store-vue-django.vercel.app/'
+    'https://ecommerce-store-vue-django.vercel.app',
+    'https://attasstore.onrender.com'
 ]
 
 MIDDLEWARE = [
