@@ -53,7 +53,6 @@ INSTALLED_APPS = [
 CORS_ALLOWED_ORIGINS = [
     'https://ecommerce-store-vue-django.vercel.app',
     'https://attasstore.onrender.com',
-    'https://vercel.com/attanavaid/ecommerce-store-vue-django',
     'http://localhost:8000',
     'http://localhost:8080',
     'http://127.0.0.1:8000'
