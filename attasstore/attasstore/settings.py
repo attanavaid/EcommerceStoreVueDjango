@@ -51,11 +51,13 @@ INSTALLED_APPS = [
 
 #'https://vercel.com/attanavaid/ecommerce-store-vue-django/7tF67LejvZQ6EGHhEs21JRGR2t2g'
 CORS_ALLOWED_ORIGINS = [
+    'https://ecommerce-store-vue-django.vercel.app',
+    'https://vercel.com/attanavaid/ecommerce-store-vue-django/FzcmWBNdQzchgYmts2iFKEKyGabA',
+    'https://attasstore.onrender.com',
+    'https://vercel.com/attanavaid/ecommerce-store-vue-django',
     'http://localhost:8000',
     'http://localhost:8080',
-    'http://127.0.0.1:8000',
-    'https://ecommerce-store-vue-django.vercel.app',
-    'https://attasstore.onrender.com'
+    'http://127.0.0.1:8000'
 ]
 
 MIDDLEWARE = [
