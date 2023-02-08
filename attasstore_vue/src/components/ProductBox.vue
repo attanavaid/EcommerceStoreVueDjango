@@ -3,8 +3,8 @@
         <div class="box">
             <figure class="image mb-4">
                 <img
-                    :src="`/assets/${product.name}.jpg`"
-                    alt="product"
+                    :src="`/assets/${product.name.toLowerCase()}.jpg`"
+                    alt="Product Image"
                 />
             </figure>
 
