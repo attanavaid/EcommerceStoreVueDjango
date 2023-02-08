@@ -3,7 +3,7 @@
         <div class="box">
             <figure class="image mb-4">
                 <img
-                    :src="product.get_thumbnail"
+                    :src="`/assets/${product.name}.jpg`"
                     alt="product"
                 />
             </figure>

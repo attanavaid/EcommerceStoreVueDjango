@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'order'
 ]
 
-#'https://vercel.com/attanavaid/ecommerce-store-vue-django/7tF67LejvZQ6EGHhEs21JRGR2t2g'
 CORS_ALLOWED_ORIGINS = [
     'https://ecommerce-store-vue-django.vercel.app',
     'https://attasstore.onrender.com',
